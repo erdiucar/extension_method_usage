@@ -4,17 +4,17 @@ namespace extension_method_usage
 {
     class Program
     {
-        private const int MAXIMUM_VALUE = 10;
+        private const int VALUE = 10;
 
         static void Main()
         {
             // Static methods are used like that
-            int randomNumber = Randomize.GetRandomNumber(MAXIMUM_VALUE);
+            int number = MathHelper.MultiplyByTwo(VALUE);
 
             // Extension methods are used like that
-            randomNumber = MAXIMUM_VALUE.GetRandomNumber();
+            number = VALUE.MultiplyByTwo();
 
-            Console.WriteLine(randomNumber);
+            Console.WriteLine(number);
         }
     }
 }
