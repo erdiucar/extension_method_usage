@@ -1,5 +1,3 @@
-using System;
-
 namespace extension_method_usage
 {
     public static class MathHelper
